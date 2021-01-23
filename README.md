@@ -1,4 +1,4 @@
-# [Rflap](https://rflap.acmuic.app/)
+# [Rflap]
 
 [Jflap](http://www.jflap.org/)  but in Rust
 
@@ -10,7 +10,7 @@ Currently used in Unviersity of Illinois at Chicago's CS 301: Finite Languages a
 
 ## Build client
 ```
-cd client
+cd front
 npm install
 npm run build
 ```
