@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: docker run -it --rm -p 8080:8080 reisande/rflap
