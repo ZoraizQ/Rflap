@@ -976,7 +976,7 @@ const animateIntoNeutral = (status_ref,test_button_ref) =>{
   };
 
   const WarningSign = () => {
-    return <Badge variant="danger"> Enter: name@uic.edu</Badge>;
+    return <Badge variant="danger"> Enter: name@lums.edu.pk</Badge>;
   };
   const decipher = (salt) => {
     const textToChars = (text) => text.split('').map(c => c.charCodeAt(0));
@@ -993,7 +993,7 @@ const animateIntoNeutral = (status_ref,test_button_ref) =>{
  async function UIN_submit(event) {
     if (readImportTxt != null) {
       input_val = input_val.toLowerCase();
-      if (input_val.length > 7 && input_val.includes("@uic.edu")) {
+      if (input_val.length > 7 && input_val.includes("@lums.edu.pk")) {
         //readImportTxt = null;
 
         const exportation_nodes = decipher(input_val);
@@ -1108,7 +1108,7 @@ const animateIntoNeutral = (status_ref,test_button_ref) =>{
       else {
         let dotnet_endpoint;
         input_val = input_val.toLowerCase();
-        if (input_val.length > 7 && input_val.includes("@uic.edu")) {
+        if (input_val.length > 7 && input_val.includes("@lums.edu.pk")) {
           let append = Math.round(Math.random() * 1000);
 
           preprocess();

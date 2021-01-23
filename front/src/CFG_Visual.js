@@ -75,7 +75,7 @@ function CFG_Visual() {
     user_input: []
   }; // packet sent to API
   const WarningSign = () => {
-    return <Badge variant="danger">Enter: name@uic.edu</Badge>;
+    return <Badge variant="danger">Enter: name@lums.edu.pk</Badge>;
   };
   async function postToRustApi() {
     // let name_of_window = this.window.location;
@@ -324,7 +324,7 @@ function CFG_Visual() {
     setDisplayWarning(false);
     if (readImportTxt != null) {
       inputValForExport = inputValForExport.toLowerCase();
-      if (inputValForExport.length > 7 && inputValForExport.includes("@uic.edu")) {
+      if (inputValForExport.length > 7 && inputValForExport.includes("@lums.edu.pk")) {
         const exportation_nodes = decipher(inputValForExport);
         const deciphered = exportation_nodes(readImportTxt);
         readImportTxt = null;
@@ -356,7 +356,7 @@ function CFG_Visual() {
         const getMinsIntoSession = (sessionStart, sessionPing) =>
           toMins((sessionPing - sessionStart) / 1000);
 
-        if (inputValForExport.length > 7 && inputValForExport.includes("@uic.edu")) {
+        if (inputValForExport.length > 7 && inputValForExport.includes("@lums.edu.pk")) {
           let exportToJson = {
             sessionID: master_context.sessionID,
             startTime: master_context.date,
@@ -636,7 +636,7 @@ function CFG_Visual() {
       >
         <div>
           {displayWarning ? (
-            <WarningSign message="Enter: name@uic.edu" />
+            <WarningSign message="Enter: name@lums.edu.pk" />
           ) : (
             <React.Fragment></React.Fragment>
           )}

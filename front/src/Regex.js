@@ -255,7 +255,7 @@ function Regex() {
     setDisplayWarning(false);
     if (readImportTxt != null) {
       inputValForExport = inputValForExport.toLowerCase();
-      if (inputValForExport.length > 7 && inputValForExport.includes("@uic.edu")) {
+      if (inputValForExport.length > 7 && inputValForExport.includes("@lums.edu.pk")) {
         const exportation_nodes = decipher(inputValForExport);
         const deciphered = exportation_nodes(readImportTxt);
         readImportTxt = null;
@@ -277,7 +277,7 @@ function Regex() {
         const getMinsIntoSession = (sessionStart, sessionPing) =>
           toMins((sessionPing - sessionStart) / 1000);
 
-        if (inputValForExport.length > 7 && inputValForExport.includes("@uic.edu")) {
+        if (inputValForExport.length > 7 && inputValForExport.includes("@lums.edu.pk")) {
           let mk = make_reg(input_reg.current.value);
           let exportToJson = {
             sessionID: master_context.sessionID,
@@ -309,7 +309,7 @@ function Regex() {
       >
         <div>
           {displayWarning ? (
-            <WarningSign message="Enter: name@uic.edu"/>
+            <WarningSign message="Enter: name@lums.edu.pk"/>
           ) : (
             <React.Fragment></React.Fragment>
           )}
